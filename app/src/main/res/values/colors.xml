@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="back_color1">#22343C</color>
+    <color name="back_color2">#1F2E35</color>
+    <color name="introduce_color">#96A7AF</color>
+    <color name="line_color">#000000</color>
+    <color name="back_btn_color">#286053</color>
+
+
 </resources>
