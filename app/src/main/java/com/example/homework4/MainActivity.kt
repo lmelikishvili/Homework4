@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.text.Layout
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
+import androidx.appcompat.widget.AppCompatImageButton
 import androidx.appcompat.widget.AppCompatTextView
 
 class MainActivity : AppCompatActivity() {
@@ -14,8 +15,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        findViewById<AppCompatTextView>(R.id.textView4).setOnClickListener {
+        findViewById<AppCompatImageButton>(R.id.imageButton5).setOnClickListener {
             findViewById<AppCompatTextView>(R.id.textView3).setText("Left Button pushed!!!")
+        }
+
+        findViewById<AppCompatImageButton>(R.id.imageButton6).setOnClickListener {
+            findViewById<AppCompatTextView>(R.id.textView3).setText("Right Button pushed!!!")
         }
 
 

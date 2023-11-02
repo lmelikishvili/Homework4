@@ -51,7 +51,7 @@
         android:id="@+id/email"
         android:layout_width="347dp"
         android:layout_height="54dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
         android:clipToOutline="true"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
             android:id="@+id/icon"
             android:layout_width="44dp"
             android:layout_height="match_parent"
-            android:background="@drawable/user_icon" />
+            android:background="@drawable/peerson" />
 
 
         <View
@@ -73,7 +73,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/oval" />
+            android:background="@drawable/oval"
+            android:visibility="invisible" />
 
         <View
             android:id="@+id/path"
@@ -83,14 +84,16 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="7dp"
             android:layout_marginTop="26.11dp"
-            android:background="@drawable/oval" />
+            android:background="@drawable/oval"
+            android:visibility="invisible" />
 
         <EditText
             android:layout_width="253dp"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="26dp"
+            android:layout_marginEnd="18dp"
             android:hint="Yor Full Name"
+            android:textColor="@color/white"
             android:textColorHint="@color/introduce_color"
             android:textSize="28dp" />
 
@@ -104,7 +107,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
         android:clipToOutline="true"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,7 +118,7 @@
             android:id="@+id/uicon"
             android:layout_width="44dp"
             android:layout_height="match_parent"
-            android:background="@drawable/user_icon" />
+            android:background="@drawable/peerson" />
 
 
         <View
@@ -126,7 +129,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/oval" />
+            android:background="@drawable/oval"
+            android:visibility="invisible" />
 
         <View
             android:id="@+id/upath"
@@ -136,30 +140,52 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="7dp"
             android:layout_marginTop="26.11dp"
-            android:background="@drawable/oval" />
+            android:background="@drawable/oval"
+            android:visibility="invisible" />
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="253dp"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="26dp"
+            android:layout_marginEnd="18dp"
             android:hint="Username"
+            android:textColor="@color/white"
             android:textColorHint="@color/introduce_color"
             android:textSize="28dp" />
 
     </RelativeLayout>
 
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="247dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:srcCompat="@drawable/right_button" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:srcCompat="@drawable/left_button" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="247dp"
         android:layout_height="54dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="128dp"
         android:background="@drawable/button_right"
         android:clickable="true"
         android:focusable="true"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username">
 
@@ -171,8 +197,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="17dp"
             android:layout_marginEnd="106dp"
-            android:text="Next"
             android:clickable="true"
+            android:text="Next"
             android:textColor="@color/white"
             android:textSize="16dp" />
 
@@ -227,10 +253,11 @@
         android:layout_width="50dp"
         android:layout_height="54dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="128dp"
         android:background="@drawable/button_left"
+        android:visibility="invisible"
         app:layout_constraintEnd_toStartOf="@+id/relativeLayout"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username">
 
