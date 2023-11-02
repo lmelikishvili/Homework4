@@ -13,11 +13,11 @@
         android:layout_width="45dp"
         android:layout_height="43dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="32dp"
         android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="139dp"
-        android:src="@drawable/top_rect"
         android:elevation="4dp"
+        android:src="@drawable/top_rect"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -41,8 +41,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:text="lets introduce"
-        android:textSize="24dp"
         android:textColor="@color/introduce_color"
+        android:textSize="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -62,7 +62,7 @@
             android:id="@+id/icon"
             android:layout_width="44dp"
             android:layout_height="match_parent"
-            android:background="@drawable/peerson" />
+            android:background="@drawable/persin" />
 
 
         <View
@@ -118,7 +118,7 @@
             android:id="@+id/uicon"
             android:layout_width="44dp"
             android:layout_height="match_parent"
-            android:background="@drawable/peerson" />
+            android:background="@drawable/persin" />
 
 
         <View
@@ -160,9 +160,10 @@
         android:id="@+id/imageButton5"
         android:layout_width="247dp"
         android:layout_height="58dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
         app:layout_constraintTop_toBottomOf="@+id/username"
         app:srcCompat="@drawable/right_button" />
 
@@ -170,8 +171,9 @@
         android:id="@+id/imageButton6"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="32dp"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username"
         app:srcCompat="@drawable/left_button" />
